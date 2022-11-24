@@ -1,45 +1,53 @@
 package SwimmingClub;
+
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
-    // To make the menu. In this class I will make the method for making the menu.
-    Scanner input=new Scanner(System.in);
-    public void displayMenu(){
-        int choice=0;
-        int choiceBooking=0;
-        System.out.println("_____________________________");
-        System.out.println(" |Welcome to our Swim club|");
-        System.out.println(" | 1- Create a new User   | ");
-        System.out.println(" | 2- Swim Discipline    |");
-        System.out.println(" | 3- Payment             | ");
-        choice=input.nextInt();
-        switch (choice){
-            case 1:
-                System.out.println(" You choice to create a new user");
-                System.out.println("|                |");
-                System.out.println("|                |");
-                System.out.println("|                |");
-                choice=input.nextInt();
-                choice=choiceBooking;
-            case 2:
-                System.out.println("You choice Swim Disciplin");
-                System.out.println("|                |");
-                System.out.println("|                |");
-                System.out.println("|                |");
-                choice=input.nextInt();
-                choice=choiceBooking;
-            case 3:
-                System.out.println("You choice Payment");
-                System.out.println("|                 |");
-                System.out.println("|                 |");
-                System.out.println("|                 |");
-                choice=input.nextInt();
-                choice=choiceBooking;
-
-
-
-        }
-
+    Scanner sc=new Scanner(System.in); // make the scanner.
+    private String menuHeader;   // make the attributes for making the menu.
+    private String menuItem;    // We will use the String as data type.
+    private String leadText;
+    private int input;
+    private boolean beekeeping =true;
+    public Menu(){ // The empty constructor, to avoid the problem.
 
     }
+    public Menu(String menuHeader, String menuItem,String leadText)throws IOException {
+        this.menuHeader=menuHeader;
+        this.menuItem=menuItem;
+        this.leadText=leadText;
+    }
+    public void printMenu(){
+        System.out.println(menuHeader);
+        System.out.println(menuItem);
+        System.out.println(leadText);
+    }
+    public void readChoice(){
+        // use the try and the catch.
+        try {
+            // we make the while loop.
+            printMenu();
+            while (beekeeping){
+                input=sc.nextInt();
+                // make the switch statement.
+                switch (input){
+                    case 1-> System.out.println("You choice to creat a new member");
+
+                    case 2-> System.out.println("You choice Swim Disciplin");
+
+                    case 3->  System.out.println("You choice Payment");
+
+                    default->
+                            System.out.println("You typed something the system could not understand");
+                }
+            }
+            System.out.println("____________________________________________________________");
+
+        }catch (InputMismatchException e){
+            System.out.println("Waring you wrote something our system dose not contain ");
+        }
+    }
+
 }
