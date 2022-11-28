@@ -1,43 +1,52 @@
 package SwimmingClub;
-
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 public class Menu {
-    Scanner sc=new Scanner(System.in); // make the scanner.
-    private String menuHeader;   // make the attributes for making the menu.
-    private String menuItem;    // We will use the String as data type.
-    private String leadText;
+    Scanner sc = new Scanner(System.in);
+    public static final String TEXT_BLUE = "\u001B";
     private int input;
-    private boolean beekeeping =true;
-    public Menu(){ // The empty constructor, to avoid the problem.
+    private boolean keeplaying = true;
+
+    public void menuHeader() {
+        System.out.printf("  ———————————————————————————————————————————————————————————————————————————————————————————————————————————————%n");
+        System.out.println("        \uD83D\uDC2C  I N T E R N A T I O N A L    D E L F I N E    S W I M M M I N G C L U B \uD83D\uDC2C  " );
+        System.out.println("  ———————————————————————————————————————————————————————————————————————————————————————————————————————————————");
+
+        System.out.println();
+        System.out.printf("  %-25s   %-30s    %5s %n","M E M B E R S H I P","              C O M P A T I T I O N", "              E C O N O M Y");
+
+        System.out.printf("  %-38s  %-37s %-50s ","New member","  Junior teams",  "   Payment");
+        System.out.println();
+        System.out.printf("   %-38s  %-37s %-50s ","\n  Deleted memebrship","     Senior team","      Debt overview");
+        System.out.println();
+        System.out.printf("   %-25s","\n  Change mebership");
+        System.out.println();
+        System.out.println("\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+        System.out.println( "  I N F O R M A T I O N ");
+        System.out.println(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+        System.out.println("\n  Choose 1 (Membership)");
+        System.out.println("  Choose 2 (Compatition)");
+        System.out.println("  Choose 3 (Economy)");
+        System.out.print("\n  Enter:");
 
     }
-    public Menu(String menuHeader, String menuItem,String leadText)throws IOException {
-        this.menuHeader=menuHeader;
-        this.menuItem=menuItem;
-        this.leadText=leadText;
-    }
-    public void printMenu(){
-        System.out.println(menuHeader);
-        System.out.println(menuItem);
-        System.out.println(leadText);
-    }
-    public void readChoice(){
+
+    SubMenuMembership menuMembership = new SubMenuMembership();
+    SubMenuCompetition menuCompetition = new SubMenuCompetition();
+    SubMenuEconomy menuEconomy = new SubMenuEconomy();
+    public void readerChoice(){
         // use the try and the catch.
         try {
-            // we make the while loop.
-            printMenu();
-            while (beekeeping){
+            menuHeader();
+            while (keeplaying){
                 input=sc.nextInt();
                 // make the switch statement.
                 switch (input){
-                    case 1-> System.out.println("You choice to creat a new member");
+                    case 1-> menuMembership.membershipReaderChoice();
 
-                    case 2-> System.out.println("You choice Swim Disciplin");
+                    case 2-> menuCompetition.competitionReaderChoice();
 
-                    case 3->  System.out.println("You choice Payment");
+                    case 3->menuEconomy.economyReaderChoice();
 
                     default->
                             System.out.println("You typed something the system could not understand");
@@ -48,6 +57,9 @@ public class Menu {
         }catch (InputMismatchException e){
             System.out.println("Waring you wrote something our system dose not contain ");
         }
+
     }
 
+
 }
+
