@@ -29,7 +29,7 @@ public class SubMenuEconomy {
 
 
         }catch (InputMismatchException e){
-            System.out.println("Waring you wrote something our system dose not contain ");
+            System.out.println("Warning you wrote something our system dose not contain ");
         }
 
     }

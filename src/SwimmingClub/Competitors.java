@@ -9,9 +9,9 @@ public abstract class Competitors {
 
     private String locationName;
 
-    private String  inputSwimmingDisciplin;
+    private String inputSwimmingDiscipline;
 
-    private String swimmingDisciplin;
+    private String swimmingDiscipline;
 
 
     private int competitionForm;
@@ -21,17 +21,17 @@ public abstract class Competitors {
 
     //........................instance....................
     Membership ms= new Membership();
-    //..................constructer..................
+    //..................constructor..................
 
-    public Competitors(String convention,String swimmingDisciplin ){
-        this.inputSwimmingDisciplin = swimmingDisciplin;
+    public Competitors(String convention,String swimmingDiscipline){
+        this.inputSwimmingDiscipline = swimmingDiscipline;
         generateTime();
         this.convention =convention;
     }
 
     public Competitors() {
     }
-    public Competitors(String firstname, String surname, String birthinput) {
+    public Competitors(String firstname, String surname, String birthInput) {
     }
 
     //........................................getter................
@@ -40,34 +40,34 @@ public abstract class Competitors {
     }
 
     public String getSwimmingDiscipline() {
-        return inputSwimmingDisciplin;
+        return inputSwimmingDiscipline;
     }
 
     //..........................competition information-.........................
-    public String  events(ArrayList<Competitors> lavedListe){
+    public String  events(ArrayList<Competitors> createList){
         System.out.println("the name of the location ");
         locationName = sc.nextLine();
 
-        System.out.println("\nSwimming Disciplins" + "(\nChoose 1 (breastSwimming) \nChoose 2 (butterfly)\nChoose 3 (backSwimming)");
-        inputSwimmingDisciplin = sc.nextLine();
+        System.out.println("\nSwimming Disciplines" + "(\nChoose 1 (breastSwimming) \nChoose 2 (butterfly)\nChoose 3 (backSwimming)");
+        inputSwimmingDiscipline = sc.nextLine();
 
-        if (inputSwimmingDisciplin.equalsIgnoreCase("1")){
-            swimmingDisciplin= "BreastSwimming";
+        if (inputSwimmingDiscipline.equalsIgnoreCase("1")){
+            swimmingDiscipline = "BreastSwimming";
         }
 
-        else if (inputSwimmingDisciplin.equalsIgnoreCase("2")){
-            swimmingDisciplin="Butterfly";
+        else if (inputSwimmingDiscipline.equalsIgnoreCase("2")){
+            swimmingDiscipline ="Butterfly";
         }
-        else if (inputSwimmingDisciplin.equalsIgnoreCase("3")){
-            swimmingDisciplin= "Backswimming";
+        else if (inputSwimmingDiscipline.equalsIgnoreCase("3")){
+            swimmingDiscipline = "BackSwimming";
         }
         else {
-            System.out.println("You didnt choose a swimming disciplin");
+            System.out.println("You didnt choose a swimming discipline");
         }
-        Senior mdo = new Senior(locationName,swimmingDisciplin);
-        lavedListe.add(mdo);
-        //System.out.println("oprettelses dagen er: " + LocalDate.now());
-        return locationName+ swimmingDisciplin;
+        Senior mdo = new Senior(locationName, swimmingDiscipline);
+        createList.add(mdo);
+        //System.out.println("Create day is: " + LocalDate.now());
+        return locationName+ swimmingDiscipline;
     }
 
     // ...................place............................................
@@ -80,8 +80,8 @@ public abstract class Competitors {
     public LocalTime generateTime() {
 
         LocalTime lt= LocalTime.of(1,9,1);
-        long secound = ChronoUnit.MINUTES.between(lt,LocalTime.now().minusHours(1));
-        LocalTime tid= lt.plusMinutes(new Random().nextInt((int) secound + 1));
+        long second = ChronoUnit.MINUTES.between(lt,LocalTime.now().minusHours(1));
+        LocalTime tid= lt.plusMinutes(new Random().nextInt((int) second + 1));
 
         return tid;
     }

@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class Main {
     void run () throws IOException {
-        //    Menu menu = new Menu();
+        // Menu menu = new Menu();
         // menu.readerChoice();
-        ArrayList<Competitors> lavedListee = new ArrayList<>();
+        ArrayList<Competitors> createList = new ArrayList<>();
         Senior ss= new Senior();
-        ss.events(lavedListee);
-        ss.printSenior(lavedListee);
+        ss.events(createList);
+        ss.printSenior(createList);
         Junior jj = new Junior();
-        jj.events(lavedListee);
-        jj.printJunior(lavedListee);
+        jj.events(createList);
+        jj.printJunior(createList);
     }
     public static void main(String[] args) throws IOException {
         new Main().run();

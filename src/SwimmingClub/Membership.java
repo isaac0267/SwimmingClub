@@ -15,7 +15,7 @@ public  class Membership {
     private int memberNumber;
     private int price;
 
-    //—————————————————————————————————————————————————— Constructur ———————————————————————————————————————————————————
+    //—————————————————————————————————————————————————— Constructor ———————————————————————————————————————————————————
     public Membership() {
         memberNumber = nextMember++;
     }
@@ -57,9 +57,9 @@ public  class Membership {
         this.price = overAgePrice;
     }
 
-    //——————————————————————————————————————————————————  Methodes ————————————————————————————————————————————————————
+    //——————————————————————————————————————————————————  Methods ————————————————————————————————————————————————————
 
-    public String CreatMember(ArrayList<Competitors>lavedlistee) {
+    public String CreatMember(ArrayList<Competitors>createList) {
         System.out.println("What is your first name ?");
         String firstName = sc.nextLine();
         System.out.println("What is your surname ?");
@@ -69,7 +69,7 @@ public  class Membership {
         //TODO:FIX LIST
         //  activeOrPassiveMember (createList);
         Senior mdo = new Senior(firstName, surname, birtInput);
-        lavedlistee.add(mdo);
+        createList.add(mdo);
 
 
         return firstName + surname + birtInput;
