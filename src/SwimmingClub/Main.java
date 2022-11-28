@@ -6,7 +6,13 @@ public class Main {
 
     public static void main(String[]args) throws IOException {
         new Main().run();
+        new Main().isaac();
+    }
 
+    public void isaac() {
+        int money = 999999999;
+        int moreMoney = 999999999;
+        System.out.println("Isaac's money = " + money + moreMoney);
     }
 
     void run() throws IOException {
