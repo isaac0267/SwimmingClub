@@ -13,6 +13,9 @@ public class Main {
     void issac() {
         int money = 999999999;
     }
+
+    public void hello() {
+    }
     void run() throws IOException {
         Menu menu2=new Menu("|Welcome to our Swim club|\n" +
                 "", "you can choice:\n","| 1- Create a new User  |\n"+
