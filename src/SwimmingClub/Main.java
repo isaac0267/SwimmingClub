@@ -13,6 +13,7 @@ public class Main {
         int money = 999999999;
         int moreMoney = 999999999;
         System.out.println("Isaac's money = " + money + moreMoney);
+        System.out.println();
     }
 
     void run() throws IOException {
