@@ -3,6 +3,8 @@ package SwimmingClub;
 import java.io.IOException;
 
 public class Main {
+    public void main() {
+    }
     public static void main(String[]args) throws IOException {
         new Main().run();
 
