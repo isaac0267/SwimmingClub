@@ -98,6 +98,8 @@ public class User {
         setEmail("kirame97@gmail.com");
         setPhoneNumber("129382372");
         setPassword("HelloWorld4");
+        setUserName("Kirame98");
+        setPassword("HelloWorld4");
 
     }
 
