@@ -72,6 +72,7 @@ public class User {
         setFirstName("Isaac");
         setLastName("Levy");
         setPhoneNumber("81745734");
+        setEmail("Isaklevy97@gmail.com");
         setUserName("Isaa0267");
         setPassword("HelloWorld");
 
@@ -79,6 +80,7 @@ public class User {
         setFirstName("Wei");
         setLastName("Yang");
         setPhoneNumber("7847384334");
+        setEmail("Wei97@gmail.com");
         setUserName("Weix0015");
         setPassword("HelloWorld2");
 
@@ -86,12 +88,14 @@ public class User {
         setFirstName("Hardy");
         setLastName("Akira");
         setPhoneNumber("34783484734");
+        setEmail("Hardy97@gmail.com");
         setUserName("Hardy");
         setPassword("HelloWorld3");
 
         // person 4
         setFirstName("Kirame");
         setLastName("Kisame");
+        setEmail("kirame97@gmail.com");
         setPhoneNumber("129382372");
         setPassword("HelloWorld4");
 
