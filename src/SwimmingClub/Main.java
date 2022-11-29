@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner scan = new Scanner(System.in);
-    static LoginUser user;
+    static User user;
 
     void run () throws IOException {
         // Menu menu = new Menu();
@@ -24,7 +24,7 @@ public class Main {
         String userName = scan.nextLine();
         System.out.println("enter password");
         String password = scan.nextLine();
-        user = new LoginUser(userName, password);
+        user = new User(userName, password);
     }
 
     public static void loginMenu() {
@@ -33,7 +33,7 @@ public class Main {
         String name = scan.nextLine();
         System.out.println("enter password");
         String pass = scan.nextLine();
-        if (LoginUser.checkPassword(pass)){
+        if (User.checkPassword(pass)){
             System.out.println("You are now logged in");
         }
         else{
