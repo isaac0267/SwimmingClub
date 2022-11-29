@@ -11,7 +11,7 @@ public class User {
         this.password = password;
     }
 
-    public static boolean checkPassword(String password){
+    public  boolean checkPassword(String password){
         return password.equals("myPassword");
     }
 }

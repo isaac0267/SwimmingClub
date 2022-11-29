@@ -8,8 +8,6 @@ public class Main {
     static User user;
 
     void run () throws IOException {
-        // Menu menu = new Menu();
-        // menu.readerChoice();
         ArrayList<Competitor> createList = new ArrayList<>();
         Senior ss= new Senior();
         ss.events(createList);
@@ -19,32 +17,11 @@ public class Main {
         jj.printJunior(createList);
     }
 
-    public static void createUserMenu() {
-        System.out.println("enter username");
-        String userName = scan.nextLine();
-        System.out.println("enter password");
-        String password = scan.nextLine();
-        user = new User(userName, password);
-    }
 
-    public static void loginMenu() {
-        System.out.println("Do you want to login?");
-        System.out.println("enter user");
-        String name = scan.nextLine();
-        System.out.println("enter password");
-        String pass = scan.nextLine();
-        if (User.checkPassword(pass)){
-            System.out.println("You are now logged in");
-        }
-        else{
-            System.out.println("wrong info");
-        }
 
-    }
+
 
     public static void main(String[] args) throws IOException {
-        createUserMenu();
-        loginMenu();
         new Main().run();
     }
 }
