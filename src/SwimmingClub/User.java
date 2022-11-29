@@ -22,16 +22,22 @@ public class User {
    public void login() {
        System.out.println("Enter your first name");
        firstName = scanner.nextLine();
+       System.out.println(firstName);
        System.out.println("Enter your last name");
        lastName = scanner.nextLine();
+       System.out.println(lastName);
        System.out.println("Enter your email");
        email = scanner.nextLine();
+       System.out.println(email);
        System.out.println("Enter your phoneNumber");
        phoneNumber = scanner.nextLine();
+       System.out.println(phoneNumber);
        System.out.println("Enter your username");
        username = scanner.nextLine();
+       System.out.println(username);
        System.out.println("Enter your password");
        password = scanner.nextLine();
+       System.out.println(password);
    }
 
     // getter
