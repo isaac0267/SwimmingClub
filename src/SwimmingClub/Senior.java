@@ -1,6 +1,6 @@
 package SwimmingClub;
 import java.util.ArrayList;
-public class Senior extends  Competitors  {
+public class Senior extends Competitor {
 
 
     public Senior(){
@@ -16,11 +16,11 @@ public class Senior extends  Competitors  {
     }
 
 
-    public void printSenior(ArrayList<Competitors> lavedListee){
+    public void printSenior(ArrayList<Competitor> lavedListee){
         System.out.printf("%-12s%-30s%-30s%-10s%n","RANK", "TIME","LOCATION", "SWIMMING DISCIPLIN");
 
         TheCompetitors.ListCreate(lavedListee);
-        for (Competitors f :lavedListee)
+        for (Competitor f :lavedListee)
             System.out.printf("%-12s%-30s%-30s%-30s%-30s%-10s%n",f.placeList(),f.generateTime(), f.getConvention(),
                     f.getSwimmingDiscipline(), f.ms.getFirstName(), f.ms.getSurName());
     }

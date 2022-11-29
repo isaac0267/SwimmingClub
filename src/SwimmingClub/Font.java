@@ -6,26 +6,21 @@ public class Font {
     private String name;
     private int style;
     private int size;
-    public static int BOLD;
+    public static int bold;
 
-    public static int ITALIC;
-    public Font (String name, int style, int size) {
+    public static int italic;
+    public Font(String name, int style, int size) {
         this.name = name;
         this.style=style;
         this.size = size;
     }
-    public void setFonts () {
+    public void setFonts() {
         this.fonts = fonts;
     }
 
     public void graphic() {
-        Font font = new Font("Courier", Font.BOLD, 20);
+        Font font = new Font("Courier", Font.bold, 20);
 
     }
-
-
-
-
-
 }
 

@@ -20,7 +20,7 @@ public  class Membership {
         memberNumber = nextMember++;
     }
     //——————————————————————————————————————————————————  Arraylist ————————————————————————————————————————————————————
-    private ArrayList <Competitors> member = new ArrayList<>();
+    private ArrayList <Competitor> member = new ArrayList<>();
 
     //——————————————————————————————————————————————————  Scanner & instance ————————————————————————————————————————————————————
     Scanner sc = new Scanner(System.in);
@@ -36,7 +36,7 @@ public  class Membership {
         return inputLine;
     }
 
-    public int getPrice () {
+    public int getPrice() {
         return price;
     }
     public String getFirstName(){
@@ -53,13 +53,13 @@ public  class Membership {
 
     //——————————————————————————————————————————————————  Setter ——————————————————————————————————————————————————————
 
-    public void setOverAgePrice (int overAgePrice) {
+    public void setOverAgePrice(int overAgePrice) {
         this.price = overAgePrice;
     }
 
     //——————————————————————————————————————————————————  Methods ————————————————————————————————————————————————————
 
-    public String CreatMember(ArrayList<Competitors>createList) {
+    public String createMember(ArrayList<Competitor>createList) {
         System.out.println("What is your first name ?");
         String firstName = sc.nextLine();
         System.out.println("What is your surname ?");
@@ -75,7 +75,7 @@ public  class Membership {
         return firstName + surname + birtInput;
     }
 
-    public void activeOrPassiveMember () {
+    public void activeOrPassiveMember() {
         System.out.println("Do you want a active or passive membership? ");
         inputLine = sc.nextLine();
         //TODO:FIX LIST
@@ -87,14 +87,14 @@ public  class Membership {
 
         } else if (inputLine.equals("active".toLowerCase())) {
             exerciserOrCompetitionSwimmer();
-            //swimmingDisciplines.ChooseASwimmingDisciplin();
+            //swimmingDisciplines.ChooseASwimmingDiscipline();
         }
     }
     public int getAge(){
         return age;
     }
 
-    public int age () {
+    public int age() {
         LocalDate birth = LocalDate.parse(birthInput);
         LocalDate presentDate = LocalDate.now();
         System.out.println(Period.between(birth, presentDate).getYears());
@@ -126,7 +126,7 @@ public  class Membership {
 
     public void exerciserOrCompetitionSwimmer() {
         System.out.println("Swimming form ");
-        System.out.println("Choose 1 (competition swimmer) \nChooose 2 (exerciser)");
+        System.out.println("Choose 1 (competition swimmer) \nChoose 2 (exerciser)");
         System.out.print("Enter:");
         input = sc.nextInt();
         if (input == 1)  {

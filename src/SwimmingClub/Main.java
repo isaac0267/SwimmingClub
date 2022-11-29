@@ -11,7 +11,7 @@ public class Main {
     void run () throws IOException {
         // Menu menu = new Menu();
         // menu.readerChoice();
-        ArrayList<Competitors> createList = new ArrayList<>();
+        ArrayList<Competitor> createList = new ArrayList<>();
         Senior ss= new Senior();
         ss.events(createList);
         ss.printSenior(createList);
@@ -44,21 +44,9 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-
         createUserMenu();
         loginMenu();
-
         new Main().run();
-
-
-
-
-
-
-
-
-
-
     }
 }
 
