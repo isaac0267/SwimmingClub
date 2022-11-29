@@ -63,5 +63,9 @@ public class User {
     public String toString() {
         return firstName + lastName + email + password;
     }
+
+    public String isaac() {
+        return lastName;
+    }
 }
 
