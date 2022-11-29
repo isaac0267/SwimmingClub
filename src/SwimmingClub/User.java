@@ -1,6 +1,9 @@
 package SwimmingClub;
 
+import java.util.Scanner;
+
 public class User {
+    Scanner scanner = new Scanner(System.in);
     String firstName;
     String lastName;
     String email;
@@ -16,6 +19,21 @@ public class User {
         this.userName = userName;
         this.password = password;
     }
+   public void login() {
+       System.out.println("Enter your first name");
+       firstName = scanner.nextLine();
+       System.out.println("Enter your last name");
+       lastName = scanner.nextLine();
+       System.out.println("Enter your email");
+       email = scanner.nextLine();
+       System.out.println("Enter your phoneNumber");
+       phoneNumber = scanner.nextLine();
+       System.out.println("Enter your username");
+       userName = scanner.nextLine();
+       System.out.println("Enter your password");
+       password = scanner.nextLine();
+
+   }
 
     // getter
     public String getFirstName() {
