@@ -68,13 +68,32 @@ public class User {
     }
 
     public void users() {
+        // person 1
         setFirstName("Isaac");
         setLastName("Levy");
         setPhoneNumber("81745734");
         setUserName("Isaa0267");
         setPassword("HelloWorld");
 
+        // person 2
+        setFirstName("Wei");
+        setLastName("Yang");
+        setPhoneNumber("7847384334");
+        setUserName("Weix0015");
+        setPassword("HelloWorld2");
 
+        // person 3
+        setFirstName("Hardy");
+        setLastName("Akira");
+        setPhoneNumber("34783484734");
+        setUserName("Hardy");
+        setPassword("HelloWorld3");
+
+        // person 4
+        setFirstName("Kirame");
+        setLastName("Kisame");
+        setPhoneNumber("129382372");
+        setPassword("HelloWorld4");
 
     }
 
