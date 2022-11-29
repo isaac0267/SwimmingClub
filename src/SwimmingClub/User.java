@@ -32,7 +32,6 @@ public class User {
        username = scanner.nextLine();
        System.out.println("Enter your password");
        password = scanner.nextLine();
-
    }
 
     // getter
