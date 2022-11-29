@@ -67,12 +67,16 @@ public class User {
         this.password = password;
     }
 
-   public void users() {
-    setFirstName("Isaac");
-    setLastName("Levy");
-    setPhoneNumber("81745734");
+    public void users() {
+        setFirstName("Isaac");
+        setLastName("Levy");
+        setPhoneNumber("81745734");
+        setUserName("Isaa0267");
+        setPassword("HelloWorld");
 
-   }
+
+
+    }
 
     @Override
     public String toString() {
