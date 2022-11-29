@@ -1,17 +1,47 @@
 package SwimmingClub;
 
 public class User {
-    // Making attributes for userName and password, yes_or_no, scan and the last attribute is passScan.
+    String firstName;
+    String lastName;
+    String email;
+    String phoneNumber;
     String userName;
     String password;
 
 
-    public User(String userName, String password){
+    public User(String firstName, String lastName, String email, String phoneNumber,
+                String userName, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
         this.userName = userName;
         this.password = password;
     }
 
-    public  boolean checkPassword(String password){
+    // getter.
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public String getPassword() {
+        return password;
+    }
+
+
+    public boolean checkPassword(String password) {
         return password.equals("myPassword");
     }
 }
+
