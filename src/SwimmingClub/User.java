@@ -19,7 +19,7 @@ public class User {
         this.password = password;
     }
 
-    // getter.
+    // getter
     public String getFirstName() {
         return firstName;
     }
@@ -39,6 +39,22 @@ public class User {
         return password;
     }
 
+    // setter
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
     public boolean checkPassword(String password) {
         return password.equals("myPassword");
