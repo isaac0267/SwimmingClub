@@ -58,6 +58,12 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+   public void users() {
+    setFirstName("Isaac");
+    setLastName("Levy");
+    setPhoneNumber("81745734");
+
+   }
 
     @Override
     public String toString() {
