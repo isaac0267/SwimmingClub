@@ -8,27 +8,12 @@ public class LoginUser {
     String password;
 
 
-    public LoginUser(String userName, String   password){
+    public LoginUser(String userName, String password){
         this.userName = userName;
         this.password = password;
     }
 
-
-
-
     public static boolean checkPassword(String password){
         return password.equals("myPassword");
     }
-
-
-
-
-
-
-
-
-
-
-    
-
 }
