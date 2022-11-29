@@ -105,7 +105,7 @@ public class User {
 
     @Override
     public String toString() {
-        return firstName + lastName + email + password;
+        return firstName + lastName + email + phoneNumber + userName + password;
     }
 }
 
