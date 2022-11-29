@@ -7,7 +7,7 @@ public  class Membership {
     //—————————————————————————————————————————————————— Variables ———————————————————————————————————————————————————
     private String firstName;
     private String surName;
-    private String birtInput;
+    private String birthInput;
     private String inputLine;
     private int age;
     private int input;
@@ -45,8 +45,8 @@ public  class Membership {
     public String getSurName(){
         return surName;
     }
-    public String getBirtInput(){
-        return birtInput;
+    public String getBirthInput(){
+        return birthInput;
     }
 
 
@@ -95,7 +95,7 @@ public  class Membership {
     }
 
     public int age () {
-        LocalDate birth = LocalDate.parse(birtInput);
+        LocalDate birth = LocalDate.parse(birthInput);
         LocalDate presentDate = LocalDate.now();
         System.out.println(Period.between(birth, presentDate).getYears());
         return age;
@@ -103,7 +103,7 @@ public  class Membership {
 
     public int calculatingAge() {
         try {
-            LocalDate birth = LocalDate.parse(birtInput);
+            LocalDate birth = LocalDate.parse(birthInput);
             LocalDate presentDate = LocalDate.now();
             if (Period.between(birth, presentDate).getYears() < 18 ) {
                 setOverAgePrice(1600);
@@ -140,7 +140,7 @@ public  class Membership {
 
     public void printMember(){
 
-        System.out.printf("%-12s%-30s%-10s%n", firstName, surName, birtInput );
+        System.out.printf("%-12s%-30s%-10s%n", firstName, surName, birthInput);
 
     }
 }
