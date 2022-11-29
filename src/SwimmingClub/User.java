@@ -29,7 +29,7 @@ public class User {
        System.out.println("Enter your phoneNumber");
        phoneNumber = scanner.nextLine();
        System.out.println("Enter your username");
-       userName = scanner.nextLine();
+       username = scanner.nextLine();
        System.out.println("Enter your password");
        password = scanner.nextLine();
 
