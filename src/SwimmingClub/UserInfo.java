@@ -12,8 +12,12 @@ public class UserInfo {
                 "Weix0015", "HelloWorld2"));
         userList.add(new User("Hardy", "Akira", "Hardy97@gmail.com", "34783484734",
                 "Hardy", "HelloWorld3"));
+        userList.add(new User("Kirame", "Kisame","kirame972gmail.com", "129382372",
+                "Kirame98","HelloWorld4"));
     }
     public static void main(String[] args) {
+        UserInfo info = new UserInfo();
+        info.test();
 
     }
 }

@@ -71,24 +71,24 @@ public class User {
         // person 1
         setFirstName("Isaac");
         setLastName("Levy");
-        setPhoneNumber("81745734");
         setEmail("Isaklevy97@gmail.com");
+        setPhoneNumber("81745734");
         setUserName("Isaa0267");
         setPassword("HelloWorld");
 
         // person 2
         setFirstName("Wei");
         setLastName("Yang");
-        setPhoneNumber("7847384334");
         setEmail("Wei97@gmail.com");
+        setPhoneNumber("7847384334");
         setUserName("Weix0015");
         setPassword("HelloWorld2");
 
         // person 3
         setFirstName("Hardy");
         setLastName("Akira");
-        setPhoneNumber("34783484734");
         setEmail("Hardy97@gmail.com");
+        setPhoneNumber("34783484734");
         setUserName("Hardy");
         setPassword("HelloWorld3");
 
