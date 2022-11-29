@@ -5,7 +5,7 @@ public class User {
     String lastName;
     String email;
     String phoneNumber;
-    String userName;
+    String username;
     String password;
 
     public User(String firstName, String lastName, String email, String phoneNumber, String userName, String password) {
@@ -13,7 +13,7 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.userName = userName;
+        this.username = userName;
         this.password = password;
     }
 
@@ -34,8 +34,8 @@ public class User {
         return phoneNumber;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
     public String getPassword() {
@@ -59,8 +59,8 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public void setPassword(String password) {
@@ -73,7 +73,7 @@ public class User {
         setLastName("Levy");
         setEmail("Isaklevy97@gmail.com");
         setPhoneNumber("81745734");
-        setUserName("Isaa0267");
+        setUsername("Isaa0267");
         setPassword("HelloWorld");
 
         // person 2
@@ -81,7 +81,7 @@ public class User {
         setLastName("Yang");
         setEmail("Wei97@gmail.com");
         setPhoneNumber("7847384334");
-        setUserName("Weix0015");
+        setUsername("Weix0015");
         setPassword("HelloWorld2");
 
         // person 3
@@ -89,7 +89,7 @@ public class User {
         setLastName("Akira");
         setEmail("Hardy97@gmail.com");
         setPhoneNumber("34783484734");
-        setUserName("Hardy");
+        setUsername("Hardy");
         setPassword("HelloWorld3");
 
         // person 4
@@ -98,14 +98,14 @@ public class User {
         setEmail("kirame97@gmail.com");
         setPhoneNumber("129382372");
         setPassword("HelloWorld4");
-        setUserName("Kirame98");
+        setUsername("Kirame98");
         setPassword("HelloWorld4");
 
     }
 
     @Override
     public String toString() {
-        return firstName + lastName + email + phoneNumber + userName + password;
+        return firstName + lastName + email + phoneNumber + username + password;
     }
 }
 
