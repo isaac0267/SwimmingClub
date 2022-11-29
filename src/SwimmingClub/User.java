@@ -127,7 +127,6 @@ public class User {
         setPassword("HelloWorld4");
         setUsername("Kirame98");
         setPassword("HelloWorld4");
-
     }
 
     @Override
