@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
     static Scanner scan = new Scanner(System.in);
     static LoginUser user;
 
@@ -20,7 +19,7 @@ public class Main {
         jj.printJunior(createList);
     }
 
-    public static void createUserMenu(){
+    public static void createUserMenu() {
         System.out.println("enter username");
         String userName = scan.nextLine();
         System.out.println("enter password");
@@ -28,7 +27,7 @@ public class Main {
         user = new LoginUser(userName, password);
     }
 
-    public static void loginMenu(){
+    public static void loginMenu() {
         System.out.println("Do you want to login?");
         System.out.println("enter user");
         String name = scan.nextLine();

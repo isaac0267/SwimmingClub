@@ -13,7 +13,7 @@ public class SubMenuMembership {
     public void printMenu(String leadText) {
         System.out.println(leadText);
     }
-    public void membershipReaderChoice(){
+    public void membershipReaderChoice() {
         try {
             System.out.println("\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- -");
             System.out.println( "  M E M B E R S H I P");
@@ -37,13 +37,9 @@ public class SubMenuMembership {
                         System.out.println(" You typed something the system could not understand");
             }
 
-
-        }catch (InputMismatchException e){
+        } catch (InputMismatchException e) {
             System.out.println("Warning you wrote something that our system do not contain ");
         }
-
     }
-
-
 }
 

@@ -8,7 +8,7 @@ public class SubMenuEconomy {
         System.out.println(leadText);
     }
 
-    public void economyReaderChoice(){
+    public void economyReaderChoice() {
         try {
             System.out.println("\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- -");
             System.out.println( "  E C O N O M Y");
@@ -27,16 +27,10 @@ public class SubMenuEconomy {
                         System.out.println(" You typed something the system could not understand");
             }
 
-
-        }catch (InputMismatchException e){
+        } catch (InputMismatchException e) {
             System.out.println("Warning you wrote something our system dose not contain ");
         }
-
     }
-
-
-
-
 }
 
 

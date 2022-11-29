@@ -5,7 +5,7 @@ public class Menu {
     Scanner sc = new Scanner(System.in);
     public static final String TEXT_BLUE = "\u001B";
     private int input;
-    private boolean keeplaying = true;
+    private boolean keepPlaying = true;
 
     public void menuHeader() {
         System.out.printf("  ———————————————————————————————————————————————————————————————————————————————————————————————————————————————%n");
@@ -34,11 +34,11 @@ public class Menu {
     SubMenuMembership menuMembership = new SubMenuMembership();
     SubMenuCompetition menuCompetition = new SubMenuCompetition();
     SubMenuEconomy menuEconomy = new SubMenuEconomy();
-    public void readerChoice(){
+    public void readerChoice() {
         // use the try and the catch.
         try {
             menuHeader();
-            while (keeplaying){
+            while (keepPlaying) {
                 input=sc.nextInt();
                 // make the switch statement.
                 switch (input){
@@ -57,9 +57,6 @@ public class Menu {
         }catch (InputMismatchException e){
             System.out.println("Waring you wrote something our system dose not contain ");
         }
-
     }
-
-
 }
 

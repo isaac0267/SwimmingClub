@@ -124,6 +124,7 @@ public  class Membership {
         return age;
     }
 
+
     public void exerciserOrCompetitionSwimmer() {
         System.out.println("Swimming form ");
         System.out.println("Choose 1 (competition swimmer) \nChoose 2 (exerciser)");

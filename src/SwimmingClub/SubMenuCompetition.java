@@ -6,12 +6,10 @@ public class SubMenuCompetition {
     Scanner sc = new Scanner(System.in);
 
     public void printMenu(String leadText) {
-
         System.out.println(leadText);
-
     }
 
-    public void competitionReaderChoice(){
+    public void competitionReaderChoice() {
         try {
             System.out.println("\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " +
                     "- - - - - - - - - - - - - - - - -- -");
