@@ -56,8 +56,6 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public boolean checkPassword(String password) {
-        return password.equals("myPassword");
-    }
+
 }
 
