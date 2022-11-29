@@ -2,7 +2,7 @@ package SwimmingClub;
 import java.util.ArrayList;
 
 public abstract class TheCompetitors {
-    public static void ListCreate(ArrayList<Competitors> createList) {
+    public static void ListCreate(ArrayList<Competitor> createList) {
 
         //BreastSwimmers
 

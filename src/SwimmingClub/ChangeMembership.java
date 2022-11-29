@@ -10,8 +10,8 @@ public class ChangeMembership {
     //—————————————————————————————————————————————————— instance & scanner ————————————————————————————————————————————
     Membership membership = new Membership();
     Scanner sc = new Scanner(System.in);
-    //——————————————————————————————————————————————————   Methodes ————————————————————————————————————————————————————
-    public void changeMembership () {
+    //——————————————————————————————————————————————————   Methods ————————————————————————————————————————————————————
+    public void changeMembership() {
         System.out.println("You want to change your membership");
         System.out.println("write your membership ID: ");
         InputChangeMembership = sc.nextLine();
@@ -33,7 +33,7 @@ public class ChangeMembership {
         }
     }
 
-    public void deleteMembership () {
+    public void deleteMembership() {
         try {
             System.out.println(" Write the number for the line you want to delete");
             inputDeleted = sc.nextInt();
@@ -42,7 +42,8 @@ public class ChangeMembership {
                 System.out.println(inputDeleted + " is not a member from"
                         + LocalDateTime.now().format(DateTimeFormatter.ofPattern("YYYY-MM-DD HH:mm:ss" + " ")));
             }
-        }catch (Exception e) {
+
+        } catch (Exception e) {
             System.out.println("Something went wrong while deleting a member");
         }
     }

@@ -5,7 +5,6 @@ public class SubMenuCompetition {
     private int input;
     Scanner sc = new Scanner(System.in);
 
-
     public void printMenu(String leadText) {
 
         System.out.println(leadText);
@@ -14,10 +13,13 @@ public class SubMenuCompetition {
 
     public void competitionReaderChoice(){
         try {
-            System.out.println("\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- -");
+            System.out.println("\n - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " +
+                    "- - - - - - - - - - - - - - - - -- -");
             System.out.println( "  C O M P O T I T I O N");
-            System.out.print(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- -");
-            printMenu("\n  Choose 1. (Junior team) \n " + " Choose 2. (Senior team)\n  Choose 3  (End session)\n" );
+            System.out.print(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " +
+                    "- - - - - - - - - - - - - -- -");
+            printMenu("\n  Choose 1. (Junior team) \n " + " Choose 2. (Senior team)\n  " +
+                    "Choose 3  (End session)\n" );
             System.out.print("  Enter:");
             input=sc.nextInt();
             switch (input){
@@ -31,15 +33,9 @@ public class SubMenuCompetition {
                         System.out.println(" You typed something the system could not understand");
             }
 
-
-        }catch (InputMismatchException e){
-            System.out.println("Waring you wrote something our system dose not contain ");
+        } catch (InputMismatchException e){
+            System.out.println("Warning you wrote something our system dose not contain ");
         }
-
     }
-
-
-
-
 }
 

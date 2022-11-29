@@ -8,8 +8,8 @@ public class Economy {
     //—————————————————————————————————————————————————— Scanner ———————————————————————————————————————————————————
     Scanner sc = new Scanner(System.in);
     Scanner scanner = new Scanner(System.in);
-    //—————————————————————————————————————————————————— Methodes ———————————————————————————————————————————————————
-    public void payNowOrLater () {
+    //—————————————————————————————————————————————————— Methods ———————————————————————————————————————————————————
+    public void payNowOrLater() {
         System.out.println("Do you want to pay now OR Later ?");
         System.out.println("Choose '1' (Now) \nChoose '2' (Later)");
         paymentInput = sc.nextInt();
@@ -25,7 +25,8 @@ public class Economy {
             System.out.println("We have now saved your bank account information for future payment");
         }
     }
-    public void BankAccountInformation () {
+
+    public void BankAccountInformation() {
         System.out.println("Please enter your bank account number:");
         accountNumber = scanner.nextLine();
         // member.add("BankAccountInformation:" + userInput);

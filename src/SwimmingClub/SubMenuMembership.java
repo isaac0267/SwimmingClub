@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class SubMenuMembership {
     private int input;
     Scanner sc = new Scanner(System.in);
-    private ArrayList<Competitors> createList = new ArrayList<>();
+    private ArrayList<Competitor> createList = new ArrayList<>();
 
     Membership membership = new Membership();
 
