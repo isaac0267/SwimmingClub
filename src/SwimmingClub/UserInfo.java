@@ -17,8 +17,9 @@ public class UserInfo {
     }
     public static void main(String[] args) {
         UserInfo info = new UserInfo();
+        User user = new User("Isaac", "Levy", "Isaklevy97@gmail.com",
+                "81745734", "Isaa0267", "HelloWorld");
+        user.login();
         info.test();
-        System.out.println(info.userList);
-
     }
 }
