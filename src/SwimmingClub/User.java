@@ -3,6 +3,8 @@ package SwimmingClub;
 import java.util.Scanner;
 
 public class User {
+
+    UserInfo userInfo = new UserInfo();
     Scanner scanner = new Scanner(System.in);
     String firstName;
     String lastName;
@@ -28,10 +30,7 @@ public class User {
        password = scanner.nextLine();
 
        // print out user info
-       System.out.println(firstName);
-       System.out.println(lastName);
-       System.out.println(username);
-       System.out.println(password);
+       System.out.println(userInfo.userList.get(Integer.parseInt(firstName)));
    }
 
     // getter
