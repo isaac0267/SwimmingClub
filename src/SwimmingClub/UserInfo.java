@@ -3,11 +3,11 @@ package SwimmingClub;
 import java.util.ArrayList;
 
 public class UserInfo {
-    User user = new User("","","","");
+    //User user = new User("","","","");
 
     ArrayList<User> userList = new ArrayList<>();
     public void test() {
-        userList.add(new User(user.firstName, "Levy ", "Isaa0267 ", "HelloWorld\n"));
+        userList.add(new User("Isaac", "Levy ", "Isaa0267 ", "HelloWorld\n"));
         userList.add(new User("Wei ", "Yang ", "Weix0015 ", "HelloWorld2\n"));
         userList.add(new User("Hardy ", "Akira ", "Hardy ", "HelloWorld3\n"));
         userList.add(new User("Kirame ", "Kisame ", "Kirame98 ","HelloWorld4"));

@@ -1,5 +1,6 @@
 package SwimmingClub;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class User {
@@ -10,6 +11,7 @@ public class User {
     String lastName;
     String username;
     String password;
+    boolean checkLogin;
 
     public User(String firstName, String lastName, String userName, String password) {
         this.firstName = firstName;
@@ -19,19 +21,25 @@ public class User {
     }
 
     // method for user login
-   public void login() {
-       System.out.println("Enter your first name");
-       firstName = scanner.nextLine();
-       System.out.println("Enter your last name");
-       lastName = scanner.nextLine();
-       System.out.println("Enter your username");
-       username = scanner.nextLine();
-       System.out.println("Enter your password");
-       password = scanner.nextLine();
+    public void login() {
+        String nameBooking = "";
+        System.out.println("Enter your first name");
+        nameBooking = scanner.nextLine();
+        nameBooking += firstName;
+        //Loop igennem arrayet
+        for (User list : userInfo.userList) {
+            if (list.getFirstName().equals(nameBooking));
+            System.out.println("You entered the right name");
+        }
 
-       // print out user info
-       System.out.println(userInfo.userList.get(Integer.parseInt(firstName)));
-   }
+        }
+
+
+
+
+        // print out user info
+        //System.out.println(userInfo.userList.get(Integer.parseInt(firstName)));
+
 
     // getter
     public String getFirstName() {
@@ -69,29 +77,9 @@ public class User {
 
     public void users() {
         // person 1
-        setFirstName("Isaac");
-        setLastName("Levy");
-        setUsername("Isaa0267");
-        setPassword("HelloWorld");
 
-        // person 2
-        setFirstName("Wei");
-        setLastName("Yang");
-        setUsername("Weix0015");
-        setPassword("HelloWorld2");
 
-        // person 3
-        setFirstName("Hardy");
-        setLastName("Akira");
-        setUsername("Hardy");
-        setPassword("HelloWorld3");
 
-        // person 4
-        setFirstName("Kirame");
-        setLastName("Kisame");
-        setPassword("HelloWorld4");
-        setUsername("Kirame98");
-        setPassword("HelloWorld4");
     }
 
     @Override
