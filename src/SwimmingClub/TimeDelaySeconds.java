@@ -1,7 +1,5 @@
 package SwimmingClub;
 
-import java.io.PrintStream;
-
 public class TimeDelaySeconds {
     public static void main(String[] args) {
         int timeToWait = 0; // second
