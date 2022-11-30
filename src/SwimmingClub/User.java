@@ -25,12 +25,20 @@ public class User {
         String nameBooking = "";
         System.out.println("Enter your first name");
 
-        nameBooking = scanner.nextLine();
+       // nameBooking = scanner.nextLine();
         //Loop through ArrayList
+        ArrayList<User> userList = new ArrayList<>();
 
-       for (int i = 0; i < UserInfo.userList.size(); i++) {
-           userInfo.test();
-            if (UserInfo.userList.get(i).firstName.equals(nameBooking)) {
+            userList.add(new User("Isaac", "Levy ", "Isaa0267 ", "HelloWorld\n"));
+            userList.add(new User("Wei ", "Yang ", "Weix0015 ", "HelloWorld2\n"));
+            userList.add(new User("Hardy ", "Akira ", "Hardy ", "HelloWorld3\n"));
+            userList.add(new User("Kirame ", "Kisame ", "Kirame98 ","HelloWorld4"));
+
+
+        System.out.println(userList.get(0).firstName);
+       for (int i = 0; i < userList.size(); i++) {
+
+            if (userList.get(i).firstName.equals(nameBooking)) {
                 System.out.println("You entered the right name");
             }
         }
