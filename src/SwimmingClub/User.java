@@ -1,6 +1,5 @@
 package SwimmingClub;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class User {
@@ -20,22 +19,20 @@ public class User {
         this.password = password;
     }
 
+/*
     // method for user login
     public void login() {
         String nameBooking = "";
         System.out.println("Enter your first name");
-
+        String input = scanner.nextLine();
        // nameBooking = scanner.nextLine();
         //Loop through ArrayList
-        ArrayList<User> userList = new ArrayList<>();
 
-            userList.add(new User("Isaac", "Levy ", "Isaa0267 ", "HelloWorld\n"));
-            userList.add(new User("Wei ", "Yang ", "Weix0015 ", "HelloWorld2\n"));
-            userList.add(new User("Hardy ", "Akira ", "Hardy ", "HelloWorld3\n"));
-            userList.add(new User("Kirame ", "Kisame ", "Kirame98 ","HelloWorld4"));
+            if (userList.contains(input)) {
+                System.out.println("its logged in");
+            }
 
-
-        System.out.println(userList.get(0).firstName);
+        System.out.println(userInfo.userList.get(0).firstName);
        for (int i = 0; i < userList.size(); i++) {
 
             if (userList.get(i).firstName.equals(nameBooking)) {
@@ -44,9 +41,11 @@ public class User {
         }
 
         }
+        /*
+ */
 
     // getter
-    public String getFirstName() {
+    public boolean getFirstName() {
         return firstName;
     }
 
