@@ -3,7 +3,9 @@ package SwimmingClub;
 import java.util.ArrayList;
 
 public class UserInfo {
-    ArrayList<User> userList = new ArrayList<>();
+    //User user = new User("","","","");
+
+    static ArrayList<User> userList = new ArrayList<>();
     public void test() {
         userList.add(new User("Isaac", "Levy ", "Isaa0267 ", "HelloWorld\n"));
         userList.add(new User("Wei ", "Yang ", "Weix0015 ", "HelloWorld2\n"));

@@ -24,13 +24,18 @@ public class User {
     public void login() {
         String nameBooking = "";
         System.out.println("Enter your first name");
+
         nameBooking = scanner.nextLine();
         //Loop through ArrayList
-        for (User list : userInfo.userList) {
-            if (list.getFirstName().equals(nameBooking));
+
+       for (int i = 0; i < UserInfo.userList.size(); i++) {
+           userInfo.test();
+            if (UserInfo.userList.get(i).firstName.equals(nameBooking)) {
+                System.out.println("You entered the right name");
+            }
         }
-        System.out.println("You entered the right name");
-    }
+
+        }
 
     // getter
     public String getFirstName() {
