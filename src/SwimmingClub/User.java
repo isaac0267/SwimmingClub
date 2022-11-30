@@ -45,9 +45,7 @@ public class User {
  */
 
     // getter
-    public boolean getFirstName() {
-        return firstName;
-    }
+
 
     public String getLastName() {
         return lastName;
