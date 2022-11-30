@@ -25,12 +25,11 @@ public class User {
         String nameBooking = "";
         System.out.println("Enter your first name");
         nameBooking = scanner.nextLine();
-        nameBooking += firstName;
         //Loop through ArrayList
         for (User list : userInfo.userList) {
             if (list.getFirstName().equals(nameBooking));
-            System.out.println("You entered the right name");
         }
+        System.out.println("You entered the right name");
     }
 
     // getter
